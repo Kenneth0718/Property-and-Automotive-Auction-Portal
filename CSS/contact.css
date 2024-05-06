@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+.table-bkground 
+{
+  /* The image used */
+  background-image: url("../img/dark2.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-size: cover;
+}
+
+body
+{
+ margin: 0;
+ background: rgb(0, 0, 0);
+ font-family: 'Work Sans', sans-serif;
+ font-weight: 300;
+}
+
+h3
+{
+    color: rgb(183, 221, 255);
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    text-align: center;
+}
+
+.navbar 
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header
+{
+   background: black;
+}
+
+header::after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+img
+{
+    width: 15vw;
+    margin-bottom: 10px;
+}
+
+.logo
+{
+    float: left;
+    padding: 10px 0;
+    width: 5vw;
+    margin-top: 0;
+    margin-bottom:0;
+    display: block;
+}
+
+nav
+{
+    float: right;
+}
+
+nav ul
+{
+    margin : 0;
+    padding : 0;
+    list-style: none;
+}
+
+nav li
+{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 50px;
+    position: relative;
+}
+
+nav a
+{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover
+{
+    color:yellow;
+
+}
+
+nav a:before
+{
+  content:"";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color:yellow;
+  position: absolute;
+  top:0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before
+{
+   width: 100%;
+}
+
+  /* Style the active/current link */
+  .navbar a.active {
+    background-color: #444;
+    color: white;
+    width: 50px;
+  }
+  
+
+  .table  
+{
+ color: white;
+ font-weight: bold;
+ font-size: 20px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ z-index: 2;
+ width: 100%;
+ padding: 5px;
+ text-align: center;
+}
+
+.lable
+{
+    color: white;
+    font-size: 5px;
+    text-align: center;
+}
+
+input[type=text],
+input[type=email]
+{
+  text-align: center;
+  width:20%;
+  height:25px;
+  padding:5px;
+  margin-top:5px;
+  margin-bottom:10px;
+}
+
+input[type=submit],
+input[type=reset],
+input[type=button]{
+padding: 5px;
+background: linear-gradient(#ffffff 5%, #4b4b4b 100%);
+border: 3px solid #888888;
+color: #000000;
+cursor: pointer;
+width: 10%;
+border-radius: 5px;
+margin: auto;
+margin-top: 5px;
+margin-bottom: 5px;
+font-weight:bold;
+font-size:15px;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover{
+background: linear-gradient(#968a6a 5%, #e6c15c 100%);
+}

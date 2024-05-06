@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+.table-bkground 
+{
+  /* The image used */
+  background-image: url("../img/dark2.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-size: cover;
+}
+
+body
+{
+ margin: 0;
+ background: rgb(0, 0, 0);
+ font-family: 'Work Sans', sans-serif;
+ font-weight: 300;
+}
+
+p
+{
+    color: rgb(183, 221, 255);
+    font-family: 'Courier New', monospace;
+    font-size: 15px;
+    text-align: center; 
+}
+
+h2
+{
+    color: rgb(183, 221, 255);
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    text-align: center;
+}
+
+h3
+{
+    color: rgb(183, 221, 255);
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
+}
+
+.navbar 
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+div.footer_bottom
+{
+    font-family: "Fantasy", Papyrus, Fantasy;
+    position: sticky;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.footer-box {
+    padding: 0px 0 20px 0;
+}
+
+footer {
+    width: 100%;
+    float: left;
+}
+
+footer.footer-box .heading_main h3
+{
+    border-bottom: solid #fff 1px;
+    font-size: 30px;
+    padding: 0 0 30px 0;
+    text-transform: none;
+    width: 100%;
+}
+
+footer.footer-box h3
+{
+    font-weight: 300;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+footer.footer-box p
+{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 28px;
+    color: #ffffff !important;
+    width: 100%;
+}
+
+.footer_blog {
+    padding-left: 45px;
+    float: left;
+    width: 100%;
+}
+
+.margin-bottom_30 {
+    margin-bottom: 30px !important;
+}
+
+.text_align_center {
+    text-align: center;
+}
+
+header
+{
+   background: black;
+}
+
+header::after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+img
+{
+    width: 15vw;
+    margin-bottom: 10px;
+}
+
+.logo
+{
+    float: left;
+    padding: 10px 0;
+    width: 5vw;
+    margin-top: 0;
+    margin-bottom:0;
+    display: block;
+}
+
+nav
+{
+    float: right;
+}
+
+nav ul
+{
+    margin : 0;
+    padding : 0;
+    list-style: none;
+}
+
+nav li
+{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 50px;
+    position: relative;
+}
+
+nav a
+{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover
+{
+    color:yellow;
+
+}
+
+nav a:before
+{
+  content:"";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color:yellow;
+  position: absolute;
+  top:0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before
+{
+   width: 100%;
+}
+
+  /* Style the active/current link */
+  .navbar a.active {
+    background-color: #444;
+    color: white;
+    width: 50px;
+  }
+  
+
+  .item
+{
+	border: 1px solid gray;
+	display: inline-block;
+	margin: 5px;
+	width: 200px;
+    color:rgb(255, 255, 255);
+}
+
+.item_row
+{	border-top: 1px solid gray;
+ 
+	width: 100%;
+}
+
+
+
+.item_img
+{
+	
+	height: 150px;
+	width: 150px;
+}
+
+.table  
+{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+}
+
+input[type=submit],
+input[type=reset],
+input[type=button]{
+padding: 5px;
+background: linear-gradient(#ffffff 5%, #4b4b4b 100%);
+border: 3px solid #888888;
+color: #000000;
+cursor: pointer;
+width: 10%;
+border-radius: 5px;
+margin: auto;
+margin-top: 5px;
+margin-bottom: 5px;
+font-weight:bold;
+font-size:15px;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover{
+background: linear-gradient(#968a6a 5%, #e6c15c 100%);
+}

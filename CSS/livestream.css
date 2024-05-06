@@ -1,0 +1,123 @@
+body
+{
+ margin: 0;
+ background: white;
+ font-family: 'Work Sans', sans-serif;
+ font-weight: 300;
+}
+
+.navbar 
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header
+{
+   background: black;
+}
+
+header::after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+img
+{
+    width: 15vw;
+    margin-bottom: 10px;
+}
+.logo
+{
+    float: left;
+    padding: 10px 0;
+    width: 5vw;
+    margin-top: 0;
+    margin-bottom:0;
+    display: block;
+
+}
+
+nav
+{
+    float: right;
+}
+
+nav ul
+{
+    margin : 0;
+    padding : 0;
+    list-style: none;
+}
+
+nav li
+{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 50px;
+    position: relative;
+}
+
+nav a
+{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover
+{
+    color:yellow;
+
+}
+
+nav a:before
+{
+  content:"";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color:yellow;
+  position: absolute;
+  top:0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before
+{
+   width: 100%;
+
+}
+
+  /* Style the active/current link */
+  .navbar a.active {
+    background-color: #444;
+    color: white;
+    width: 50px;
+  }
+
+  .item
+  {
+      border: 1px solid gray;
+      display: inline-block;
+      margin: 5px;
+      width: 200px;
+      color:black;
+  }
+  .item_row
+  {	border-top: 1px solid gray;
+   
+      width: 100%;
+  }
+  
+  
+  
+  .item_img
+  {
+      
+      height: 150px;
+      width: 150px;
+  }

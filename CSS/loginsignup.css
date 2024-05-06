@@ -1,0 +1,172 @@
+
+@font-face {
+font-family: 'Muli Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Muli Bold'), url('Muli-Bold.woff') format('woff');
+}
+@font-face {
+font-family: 'Muli ExtraBold';
+font-style: normal;
+font-weight: normal;
+src: local('Muli ExtraBold'), url('Muli-ExtraBold.woff') format('woff');
+}
+body {
+margin: 0;
+padding: 0;
+font-family: "Muli Regular";
+}
+body:before {
+content: '';
+position: fixed;
+width: 100vw;
+height: 100vh;
+background-color:black;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+font-family: "Muli Regular";
+}
+.blur {
+background: rgb(0 0 0 / 20%);
+backdrop-filter: blur(6px);
+height: 100vh;
+width: 100%;
+}
+.formContent {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 400px;
+height: 550px;
+padding: 80px 40px;
+box-sizing: border-box;
+background: rgb(255 255 255 / 11%);
+box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+border-radius: 10px;
+}
+
+.formContent h2 {
+margin: 0;
+padding: 0 0 20px;
+color: #fff;
+text-align: center;
+text-transform: uppercase;
+font-family: "Muli Bold";
+}
+.formContent label {
+margin: 0;
+padding: 0;
+font-weight: bold;
+color: #fff;
+}
+.formContent input {
+width: 100%;
+margin-bottom: 20px;
+}
+.formContent input[type="text"], .formContent input[type="password"], .formContent input[type="username"] {
+border: none;
+border-bottom: 1px solid #fff; 
+background: transparent;
+outline: none;
+height: 40px;
+color: #fff;
+font-size: 16px;
+}
+.formContent input[type="submit"] {
+color: #000;
+font-size: 16px;
+background: #e8e8e8;
+cursor: pointer;
+border-radius: 5px;
+border: 1px solid #000;
+outline: none;
+margin-top: 5px;
+padding: 10px 10px 10px 10px;
+}
+.formContent input[type="submit"]:hover {
+color: #fff;
+background: #104e99;
+}
+.formContent a {
+color: #fff;
+font-size: 14px;
+font-weight: bold;
+text-decoration: none;
+}
+input[type="checkbox"] {
+width: 6%;
+}
+.remember span {
+color: #fff;
+font-family: 'Muli Regular', "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"
+}
+.remember span a {
+color: #fff;
+font-family: 'Muli Regular', "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"
+}
+.login {
+color: #fff;
+text-align: center;
+margin: 20px 0;
+font-family: 'Muli Regular', sans-serif;
+}
+.Oroption:before {
+content: "";
+display: block;
+width: 115px;
+height: 1px;
+background: #e8e8e8;
+left: 0;
+position: absolute;
+left: 15%;
+margin-top: 10px;
+}
+.Oroption:after {
+content: "";
+display: block;
+width: 115px;
+height: 1px;
+background: #e8e8e8;
+right: 58px;
+/* top: 50%; */
+position: absolute;
+margin-top: -10px;
+}
+.links {
+display: flex;
+cursor: pointer;
+color: white;
+margin: 0 0 20px 0;
+margin-right: 40%;
+}
+.g-signin2 {
+    display: flex;
+    align-items: center;
+    justify-content: center
+
+
+}
+
+.links i {
+font-size: 17px;
+}
+i span {
+margin-left: 8px;
+font-weight: 500;
+letter-spacing: 1px;
+font-size: 16px;
+font-family: 'Muli Regular', sans-serif;
+}
+.signup {
+font-size: 15px;
+color: white;
+font-family: 'Muli Regular', sans-serif;
+text-align: center;
+}
+.signup a {
+color: #cdff38;
+text-decoration: none;
+}
